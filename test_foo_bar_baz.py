@@ -35,3 +35,4 @@ def test_more():
     from foo_bar_baz import foo_bar_baz
     assert (foo_bar_baz(0) != foo_bar_baz(1))
     assert (foo_bar_baz(6767) != foo_bar_baz(67))
+    assert (foo_bar_baz(42) != foo_bar_baz(2))

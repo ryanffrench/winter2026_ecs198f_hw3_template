@@ -19,3 +19,10 @@ def test_error():
 def test_empty():
     with pytest.raises(TypeError):
         foo_bar_baz()
+    with pytest.raises(TypeError):
+        foo_bar_baz(None)
+
+def test_type():
+    assert isinstance(foo_bar_baz(15), str)
+    assert isinstance(foo_bar_baz(0), str)
+    assert isinstance(foo_bar_baz(-1), str)
